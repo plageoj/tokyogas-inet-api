@@ -55,6 +55,8 @@
     "@loopback/rest-crud": "^0.8.18",
     "@loopback/rest-explorer": "^3.0.4",
     "@loopback/service-proxy": "^3.0.4",
+    "dotenv": "^8.2.0",
+    "loopback-connector-mongodb": "^5.4.0",
     "tslib": "^2.0.0"
   },
   "devDependencies": {

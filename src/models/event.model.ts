@@ -3,6 +3,13 @@ import {Entity, model, property} from '@loopback/repository';
 @model({settings: {strict: false}})
 export class Event extends Entity {
   @property({
+    type: 'number',
+    id: true,
+    generated: true,
+  })
+  id?: number;
+
+  @property({
     type: 'string',
     required: true,
   })
@@ -18,6 +25,11 @@ export class Event extends Entity {
     type: 'string',
   })
   place?: string;
+
+  @property({
+    type: 'number',
+  })
+  numOfPeople?: number;
 
   // Define well-known properties here
 
