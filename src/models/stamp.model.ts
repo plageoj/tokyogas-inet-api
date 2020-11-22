@@ -4,11 +4,11 @@ import {Event} from './event.model';
 @model({settings: {strict: false}})
 export class Stamp extends Entity {
   @property({
-    type: 'number',
+    type: 'string',
     id: true,
     generated: true,
   })
-  id?: number;
+  id?: string;
 
   @property({
     type: 'date',
@@ -18,7 +18,7 @@ export class Stamp extends Entity {
 
   // Define well-known properties here
 
-  @belongsTo(() => Event) eventId: number;
+  @belongsTo(() => Event) eventId: string;
 
   // Indexer property to allow additional data
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
